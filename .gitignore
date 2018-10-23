@@ -1,0 +1,59 @@
+/.settings/
+/target/
+logs/
+/logs/
+/test-output/
+/mvn_repo/
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+*.jar
+
+# generated files
+bin/
+gen/
+
+# Eclipse project files
+.classpath
+.project
+.DS_Store
+
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+#idea
+*.iml
+.DS_Store
+.idea/
+target/
+*.log
+*.settings/
+*.project
+*.classpath
+
+# svn目录忽略。。
+.svn/
+.svn
+/.svn/
+
+WEB-INF/
+/WEB-INF/
+/WebContent/WEB-INF/
+/WEB-INF/classes/
+/META-INF/
+
+springboot-demo/WebContent/META-INF/
+springboot-demo/WebContent/WEB-INF/classes/
+springboot-demo/WEB-INF/
+springboot-demo/WebContent/META-INF/*
+springboot-demo/WebContent/WEB-INF/classes/*
+.metadata/*
