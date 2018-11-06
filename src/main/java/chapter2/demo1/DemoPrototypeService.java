@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * Prototype的Bean
  *
  * Date 2018/10/24 上午12:22
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Service
 @Scope("prototype") // 声明为prototype的类

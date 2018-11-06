@@ -11,7 +11,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
  * 配置类
  * <p>
  * Date 2018/10/23 下午11:24
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Configuration
 @ComponentScan("chapter1.demo3")

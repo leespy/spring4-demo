@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * Date 2018/10/23 上午9:00
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Service
 public class UseFunctionService {

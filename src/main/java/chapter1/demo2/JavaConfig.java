@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * Date 2018/10/23 上午9:03
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Configuration // 声明当前类是一个配置类
 public class JavaConfig {

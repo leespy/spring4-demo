@@ -13,7 +13,7 @@ import java.lang.annotation.Target;
  * 新增Action注解类
  * <p>
  * Date 2018/10/23 下午6:56
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)

@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  * 切面
  * <p>
  * Date 2018/10/23 下午7:24
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Aspect // 注解声明切面
 @Component // 注解让切面类成为Spring的容器Bean

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * 被拦截的类
  * <p>
  * Date 2018/10/23 下午6:59
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Service
 public class DemoAnnotationService {
