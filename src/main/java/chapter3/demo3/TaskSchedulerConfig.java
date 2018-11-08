@@ -11,7 +11,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
  * 计划任务配置类
  * <p>
  * Date 2018/11/8 下午1:28
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Configuration
 @ComponentScan("chapter3.demo3")

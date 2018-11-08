@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 
 /**
  * Date 2018/11/8 上午10:14
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Service
 public class AwareService implements BeanNameAware, ResourceLoaderAware {

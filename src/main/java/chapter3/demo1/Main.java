@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * 允许类
  *
  * Date 2018/11/8 上午10:25
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 public class Main {
 

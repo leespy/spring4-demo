@@ -16,7 +16,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
  * 配置类
  * <p>
  * Date 2018/11/8 上午11:05
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Configuration
 @ComponentScan("chapter3.demo2")

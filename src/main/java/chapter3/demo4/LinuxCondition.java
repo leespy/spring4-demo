@@ -11,7 +11,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * 判定Linux操作系统的条件
  * <p>
  * Date 2018/11/8 下午1:41
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 public class LinuxCondition implements Condition {
 

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * 配置类
  * <p>
  * Date 2018/11/8 下午1:44
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Configuration
 public class ConditionConfig {

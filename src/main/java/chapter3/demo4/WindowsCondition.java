@@ -11,7 +11,7 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
  * 判定Windows操作系统的条件
  *
  * Date 2018/11/8 下午1:41
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 public class WindowsCondition implements Condition {
 
