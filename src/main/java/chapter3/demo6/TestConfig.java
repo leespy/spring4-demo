@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Profile;
  * 配置类
  *
  * Date 2018/11/8 下午11:23
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Configuration
 public class TestConfig {

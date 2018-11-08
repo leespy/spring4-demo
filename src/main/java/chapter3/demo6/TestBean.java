@@ -7,7 +7,7 @@ package chapter3.demo6;
  * 业务类
  * <p>
  * Date 2018/11/8 下午11:21
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 public class TestBean {
     private String content;

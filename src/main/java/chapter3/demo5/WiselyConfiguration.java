@@ -16,7 +16,7 @@ import org.springframework.context.annotation.Configuration;
  * 新建一个组合注解，组合@Configuration 和 @ComponentScan
  *
  * Date 2018/11/8 下午9:28
- * Author lijinlong02@baidu.com
+ * Author muse
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
