@@ -1,6 +1,4 @@
-/*
- * Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
- */
+
 package chapter3.demo4;
 
 import org.springframework.context.annotation.Condition;

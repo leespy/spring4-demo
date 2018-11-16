@@ -1,6 +1,4 @@
-/*
- * Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
- */
+
 package chapter1.demo2;
 
 import org.springframework.context.annotation.Bean;

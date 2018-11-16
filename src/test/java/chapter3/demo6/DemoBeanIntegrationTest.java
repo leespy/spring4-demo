@@ -1,6 +1,3 @@
-/*
- * Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
- */
 package chapter3.demo6;
 
 import org.junit.Assert;
