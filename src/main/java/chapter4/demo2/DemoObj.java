@@ -1,6 +1,4 @@
-/*
- * Copyright (C) 2018 Baidu, Inc. All Rights Reserved.
- */
+
 package chapter4.demo2;
 
 /**
