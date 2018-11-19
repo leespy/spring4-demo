@@ -16,7 +16,7 @@ import org.springframework.web.servlet.view.JstlView;
  */
 @Configuration
 @EnableWebMvc // 开启一些默认配置，如ViewResolver或者MessageConverter等。
-@ComponentScan("chapter4.demo1")
+@ComponentScan("chapter4.*")
 public class MyMvcConfig {
     @Bean
     public InternalResourceViewResolver viewResolver() {
