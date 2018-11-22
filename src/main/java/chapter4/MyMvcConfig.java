@@ -1,17 +1,25 @@
 
 package chapter4;
 
+import java.util.List;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.web.multipart.MultipartResolver;
+import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.PathMatchConfigurer;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
 import chapter4.demo3.DemoInterceptor;
+import chapter4.demo6.MyHttpMessageConverter;
 
 /**
  * 配置代码
@@ -62,5 +70,61 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter { // 继承WebMvcConfig
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(demoInterceptor());
+    }
+
+    /**
+     * 在Spring MVC中，路径参数如果带"."话，"."后面的值将被忽略，例如访问：xxxxx/pathvar/xx.yy ，此时yy会被忽略。
+     * 设置false，则不忽略
+     *
+     * @param configurer
+     */
+    @Override
+    public void configurePathMatch(PathMatchConfigurer configurer) {
+        configurer.setUseSuffixPatternMatch(false);
+    }
+
+    /**
+     * 页面请求跳转
+     *
+     * @param registry
+     */
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/index").setViewName("/index");
+        registry.addViewController("/toUpload").setViewName("/upload");
+        registry.addViewController("/converter").setViewName("/converter");
+    }
+
+    /**
+     * 上传附件支持
+     *
+     * @return
+     */
+    @Bean
+    public MultipartResolver multipartResolver() {
+        CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
+        multipartResolver.setMaxUploadSize(1000000);
+        return multipartResolver;
+    }
+
+    /**
+     * 重载会覆盖掉Spring MVC默认注册的多个HttpMessageConverter
+     */
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        super.configureMessageConverters(converters);
+    }
+
+    /**
+     * 仅添加一个自定义的HttpMessageConverter，不会像configureMessageConverters那样覆盖默认的多个HttpMessageConverter
+     */
+    @Override
+    public void extendMessageConverters(List<HttpMessageConverter<?>> converters) {
+        converters.add(converter());
+    }
+
+    @Bean
+    public MyHttpMessageConverter converter() {
+        return new MyHttpMessageConverter();
     }
 }
