@@ -13,7 +13,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 /**
  * 控制器
- * http://localhost:8080/springboot/toUpload
+ * http://localhost:8080/spring4/toUpload
  *
  * Date 2018/11/22 上午9:52
  * Author muse
@@ -27,7 +27,7 @@ public class UploadController {
             /**
              * 使用FileUtils.writeByteArrayToFile快速写文件到磁盘
              */
-            FileUtils.writeByteArrayToFile(new File("/Users/lijinlong02/baidu/git_workspace/muse/springboot-demo/src/main"
+            FileUtils.writeByteArrayToFile(new File("/Users/lijinlong02/baidu/git_workspace/muse/spring4-demo/src/main"
                     + "/resources/uploadFiles/" + file.getOriginalFilename()), file.getBytes());
             return "success";
         } catch (IOException e) {

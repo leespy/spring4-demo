@@ -51,9 +51,9 @@ WEB-INF/
 /WEB-INF/classes/
 /META-INF/
 
-springboot-demo/WebContent/META-INF/
-springboot-demo/WebContent/WEB-INF/classes/
-springboot-demo/WEB-INF/
-springboot-demo/WebContent/META-INF/*
-springboot-demo/WebContent/WEB-INF/classes/*
+spring4-demo/WebContent/META-INF/
+spring4-demo/WebContent/WEB-INF/classes/
+spring4-demo/WEB-INF/
+spring4-demo/WebContent/META-INF/*
+spring4-demo/WebContent/WEB-INF/classes/*
 .metadata/*

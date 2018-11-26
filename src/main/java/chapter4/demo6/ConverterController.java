@@ -10,7 +10,7 @@ import chapter4.demo2.DemoObj;
 
 /**
  * 控制器
- * http://localhost:8080/springboot/converter
+ * http://localhost:8080/spring4/converter
  * <p>
  * Date 2018/11/22 下午10:40
  * Author muse

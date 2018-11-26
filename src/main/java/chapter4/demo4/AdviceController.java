@@ -9,7 +9,7 @@ import chapter4.demo2.DemoObj;
 
 /**
  * 控制器
- * 请求地址：http://localhost:8080/springboot/advice?id=1&name=xx
+ * 请求地址：http://localhost:8080/spring4/advice?id=1&name=xx
  *
  * <p>
  * Date 2018/11/22 上午8:05
