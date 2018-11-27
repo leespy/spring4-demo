@@ -1,7 +1,8 @@
 目的：Spring MVC的测试
 
 重点：
-
+    为了测试Web项目通常不需要启动项目，我们需要一些Servlet相关的模拟对象，比如：MockMVC、MockHttpServletRequest、MockHttpServletResponse、MockHttpSession等。
+    在Spring里，我们使用@WebAppConfiguration指定加载的ApplicationContext是一个WebApplicationContext。
 
 依赖：
     <!-- 增加Spring test支持 -->
